@@ -165,7 +165,7 @@
 
 
 /* - allo 0% lo mettiamo alla posizione presente in style.css = right:20%
-   - al 50% deve andare TUTTO a sinistra senza fuoriuscire quindi il 100%   del  contenitore MENO la grandezza del div che muoviamo (60px)
+   - al 50% deve andare TUTTO a sinistra senza fuoriuscire quindi il 100%   del  contenitore MENO la grandezza del div che muoviamo (60px) sennò straborda
    - al 100% deve tornare al punto di partenza (vedi punto 1)
 */
 
@@ -190,3 +190,74 @@
 /* ESERCIZIO 13 */
 
 
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: moveBottom2 4s;
+  
+}
+
+@keyframes moveBottom2{ 
+  0%{
+    bottom: -10px;
+    right: 20%;
+  }
+
+  30%{
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+
+  45%{
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+
+  75%{
+    right: -10px;
+    bottom: 100%;
+  }
+
+  90%{
+    right: -15px;
+    bottom: -10px;
+  }
+
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
+}
+
+
+
+
+.ex-13-button:hover .ex-13-top-white{
+  animation: moveTop2 4s;
+  
+}
+
+@keyframes moveTop2 {
+  0% {
+    left: 10%;
+    top: -10px;
+}
+30% {
+    left: calc(100% - 30px);
+    top: -10px;
+}
+45% {
+    left: calc(100% - 30px);
+    top: 100%;
+}
+75% {
+    left: 0;
+    top: 100%;
+}
+90% {
+    left: -15px;
+    top: -10px;
+}
+100% {
+    left: 10%;
+    top: -10px;
+}
+}
