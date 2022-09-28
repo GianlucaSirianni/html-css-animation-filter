@@ -38,9 +38,28 @@
 
 /* ESERCIZIO 4 */
 
+.ex-4-square{
+  transition: opacity 2s;
+}
 
+.ex-4-square:hover{
+  opacity: 0%;
+}
 
 /* ESERCIZIO 5 */
+
+.ex-5-square{
+  transition: 1s;
+}
+
+.ex-5-square:hover{
+  transform: scale(1.5);
+}
+
+.ex-5-square:active{
+  transform: scale(0.5);
+}
+
 /* ESERCIZIO 6 */
 /* ESERCIZIO 7 */
 /* ESERCIZIO 8 */
