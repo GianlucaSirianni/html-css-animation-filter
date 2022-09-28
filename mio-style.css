@@ -135,4 +135,58 @@
 }
 
 /* ESERCIZIO 12 */
+
+
+.ex-12-button:hover .ex-12-top-white{
+  animation: moveTop 4s; 
+}
+
+/* - allo 0% lo mettiamo alla posizione presente in style.css = left:10%
+   - al 50% deve andare TUTTO a destra senza fuoriuscire quindi il 100%   del  contenitore MENO la grandezza del div che muoviamo (60px)
+   - al 100% deve tornare al punto di partenza (vedi punto 1)
+
+*/
+
+
+@keyframes moveTop {
+  0% {
+    left: 10%;
+  }
+  
+  50% {
+    left: calc(100% - 60px);
+  }
+  
+  100% {
+    left: 10%;
+  }
+}
+
+
+
+/* - allo 0% lo mettiamo alla posizione presente in style.css = right:20%
+   - al 50% deve andare TUTTO a sinistra senza fuoriuscire quindi il 100%   del  contenitore MENO la grandezza del div che muoviamo (60px)
+   - al 100% deve tornare al punto di partenza (vedi punto 1)
+*/
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: moveBottom 4s;
+  
+}
+
+@keyframes moveBottom {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: calc(100% - 60px);
+  }
+  100% {
+    right: 20%;
+  }
+}
+
 /* ESERCIZIO 13 */
+
+
